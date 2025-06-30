@@ -1,0 +1,77 @@
+/* AnimatedName.module.css */
+
+@keyframes colorCycle {
+    0%, 16.666% { 
+      color: #fe5186;
+      text-shadow: 2px 2px #007BFF;
+    }
+    16.667%, 33.333% { 
+      color: #007BFF;
+      text-shadow: 2px 2px #00FF66;
+    }
+    33.334%, 50% { 
+      color: #00FF66;
+      text-shadow: 2px 2px #FF073A;
+    }
+    50.001%, 66.666% { 
+      color: #FF073A;
+      text-shadow: 2px 2px #9D00FF;
+    }
+    66.667%, 83.333% { 
+      color: #9D00FF;
+      text-shadow: 2px 2px #FF4500;
+    }
+    83.334%, 100% { 
+      color: #FF4500;
+      text-shadow: 2px 2px #fe5186;
+    }
+  }
+  
+  @keyframes glitchEffect {
+    0% {
+      clip-path: inset(50% 0 30% 0);
+      transform: translate(-5px, 0);
+    }
+    20% {
+      clip-path: inset(20% 0 60% 0);
+      transform: translate(5px, 0);
+    }
+    40% {
+      clip-path: inset(40% 0 40% 0);
+      transform: translate(-5px, 0);
+    }
+    60% {
+      clip-path: inset(60% 0 20% 0);
+      transform: translate(5px, 0);
+    }
+    80% {
+      clip-path: inset(10% 0 70% 0);
+      transform: translate(-5px, 0);
+    }
+    100% {
+      clip-path: inset(30% 0 50% 0);
+      transform: translate(5px, 0);
+    }
+  }
+  
+  .animatedName {
+    position: relative;
+    cursor: default;
+    color: #fe5186; /* fallback color */
+    animation: colorCycle 6s linear infinite;
+    font-weight: bold;
+    font-size: inherit; /* inherit from parent */
+    text-shadow: 2px 2px #007BFF;
+    display: inline-block;
+  }
+  
+  .animatedName:hover {
+    animation: glitchEffect 0.5s ease infinite alternate;
+    /* Optionally combine color cycling on hover as well */
+    animation-name: colorCycle, glitchEffect;
+    animation-duration: 6s, 0.5s;
+    animation-timing-function: linear, ease;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+  }
+  
