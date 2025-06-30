@@ -1,0 +1,33 @@
+.footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-size: 0.9rem;
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .iconContainer a {
+    color: #00ffff;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .iconContainer a:hover {
+    color: #fe5186;
+    transform: scale(1.2);
+  }
+  
+  .credits {
+    color: #aaa;
+    font-size: 0.75rem;
+  }
+  

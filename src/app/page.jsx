@@ -1,6 +1,7 @@
 import Starfield from "@/components/Starfield";
 import ResumeButton from "@/components/ResumeButton";
 import AnimatedName from "@/components/AnimatedName";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,11 +23,12 @@ export default function Home() {
           Hi. I'm <AnimatedName />
         </h1>
         <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
-          Welcome to my space-themed portfolio — explore cybersecurity, software,
-          and data projects.
+          Welcome to my space-themed portfolio — explore cybersecurity and software projects.
         </p>
-        <ResumeButton />
+
+       {/* <ResumeButton /> */}
       </main>
+      <Footer />
     </div>
   );
 }
