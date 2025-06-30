@@ -27,6 +27,7 @@
   }
   
   .navList a:hover {
-    color: #00ffff;
+    color: #00FF66;
+    text-decoration: underline;
   }
   

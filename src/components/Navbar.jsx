@@ -26,6 +26,11 @@ export default function Navbar() {
             <i className="ri-graduation-cap-line"></i> work
           </a>
         </li>
+        <li>
+          <a href="#projects">
+            <i className="ri-code-line"></i> projects
+          </a>
+        </li>
       </ul>
     </nav>
   );

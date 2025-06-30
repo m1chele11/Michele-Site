@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 
 
@@ -52,6 +53,9 @@ export default function Home() {
   
         {/* About Section */}
         <About />
+
+        <Skills />
+
 
         <section
         id="education"
@@ -103,7 +107,7 @@ export default function Home() {
             { name: "Machine Learning", icon: "🤖" },
             { name: "Database Concepts", icon: "🗄️" },
             { name: "Data Analysis w/ Python", icon: "📊" },
-            { name: "Cryptography", icon: "🤖" },
+            { name: "Cryptography", icon: "🗝️ " },
             { name: "Applied Linear Algebra", icon: "📐" },
             { name: "C and Unix", icon: "💻" },
             { name: "Java Development", icon: "☕" },
@@ -142,6 +146,7 @@ export default function Home() {
         <Experience />
 
         <Projects />
+
 
   
         {/* Footer */}
