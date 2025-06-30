@@ -7,8 +7,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-
-
+import "../styles/globals.css";
 
 
 
@@ -29,27 +28,53 @@ export default function Home() {
         <Starfield />
         <Navbar />
   
-        {/* Hero Section */}
-        <main
-          id="home"
-          style={{
-            flex: "0 0 100vh", // take full viewport height
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            zIndex: 1,
-            padding: "0 1rem",
-          }}
-        >
-          <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
-            Hi. I'm <AnimatedName />
-          </h1>
-          <p style={{ fontSize: "1.2rem", marginBottom: "2rem", maxWidth: 600 }}>
-            Welcome to my space-themed portfolio. Explore my cybersecurity and software projects.
-          </p>
-        </main>
+       {/* Hero Section */}
+<main
+  id="home"
+  style={{
+    flex: "0 0 100vh", // take full viewport height
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    zIndex: 1,
+    padding: "0 1rem",
+  }}
+>
+  <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
+    Hi. I'm <AnimatedName />
+  </h1>
+  <p style={{ fontSize: "1.2rem", marginBottom: "2rem", maxWidth: 600 }}>
+    Welcome to my space-themed portfolio. Explore my cybersecurity and software projects.
+  </p>
+
+  <div className="iconContainer" style={{ fontSize: "2rem", gap: "1.5rem", display: "flex", justifyContent: "center" }}>
+  <a
+      href="https://github.com/m1chele11"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
+      <i className="ri-github-line"></i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/michele-barrantes-455206255"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <i className="ri-linkedin-line"></i>
+    </a>
+    <a
+      href="mailto:michele.barrantes@gmail.com"
+      aria-label="Email"
+    >
+      <i className="ri-mail-line"></i>
+    </a>
+  </div>
+</main>
+
   
         {/* About Section */}
         <About />
