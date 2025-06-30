@@ -12,7 +12,7 @@ const skills = [
   { name: "iptables", icon: "🧱" },
   { name: "Linux", icon: "🐧" },
   { name: "Python", icon: "🐍" },
-  { name: "Pandas", icon: "📈" },
+  { name: "Docker", icon: "🐳" },
   { name: "scikit-learn", icon: "🧪" },
   { name: "SQL", icon: "🗄️" },
   { name: "Java", icon: "☕" },
