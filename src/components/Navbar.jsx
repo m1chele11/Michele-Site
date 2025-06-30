@@ -22,7 +22,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#work">
+          <a href="#experience">
             <i className="ri-graduation-cap-line"></i> work
           </a>
         </li>

@@ -1,6 +1,17 @@
 "use client";
 
+import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
+
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then(mod => mod.Player),
+  { ssr: false }
+);
+
 export default function Experience() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+
   const experience = [
     {
       company: "Recreational Sports Dept – Indiana University",
@@ -31,6 +42,7 @@ export default function Experience() {
     <section
       id="experience"
       style={{
+        position: "relative",    // Important for layering the Lottie behind
         minHeight: "100vh",
         padding: "4rem 2rem",
         color: "white",
@@ -38,11 +50,32 @@ export default function Experience() {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "left",
+        overflow: "hidden",
       }}
     >
-      <h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>🛰️ Experience</h2>
+      {isClient && (
+        <Player
+          autoplay
+          loop
+          src="/lottie/rocket.json"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+            opacity: 0.15,  // subtle transparency
+            pointerEvents: "none", // make sure it doesn't block clicks
+          }}
+        />
+      )}
 
-      <div style={{ width: "100%", maxWidth: "800px" }}>
+      <h2 style={{ fontSize: "2rem", marginBottom: "2rem", position: "relative", zIndex: 1 }}>
+        🛰️ Experience
+      </h2>
+
+      <div style={{ width: "100%", maxWidth: "800px", position: "relative", zIndex: 1 }}>
         {experience.map((item, index) => (
           <div
             key={index}
@@ -86,3 +119,4 @@ export default function Experience() {
     </section>
   );
 }
+
