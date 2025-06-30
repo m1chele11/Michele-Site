@@ -17,13 +17,13 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#work">
-            <i className="ri-briefcase-line"></i> work
+          <a href="#education">
+            <i className="ri-briefcase-line"></i> edu
           </a>
         </li>
         <li>
-          <a href="#edu">
-            <i className="ri-graduation-cap-line"></i> edu
+          <a href="#work">
+            <i className="ri-graduation-cap-line"></i> work
           </a>
         </li>
       </ul>

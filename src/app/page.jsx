@@ -4,6 +4,7 @@ import AnimatedName from "@/components/AnimatedName";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 
 
 
@@ -136,6 +137,8 @@ export default function Home() {
             </ul>
         </div>
         </section>
+
+        <Experience />
 
   
         {/* Footer */}
