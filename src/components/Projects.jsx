@@ -3,6 +3,24 @@
 export default function Projects() {
   const softwareProjects = [
     {
+      name: "Movie Matchmaker Frontend",
+      description: "React/Next.js frontend app for dual-user movie genre ranking and personalized movie matching with JWT authentication.",
+      tech: ["React", "Next.js", "TypeScript", "JWT", "REST API"],
+      github: "https://github.com/m1chele11/movie-matchmaker-frontend",
+    },
+    {
+      name: "Movie Matchmaker Backend",
+      description: "Java Spring Boot REST API managing user authentication, preferences, and recommendation orchestration with secure JWT and database integration.",
+      tech: ["Java", "Spring Boot", "JWT", "Spring Security", "MySQL", "REST API"],
+      github: "https://github.com/m1chele11/moviematcher-backend",
+    },
+    {
+      name: "Movie Recommendation Microservice",
+      description: "Python Flask microservice using content-based filtering with TF-IDF and cosine similarity to provide movie recommendations via a JSON API.",
+      tech: ["Python", "Flask", "Machine Learning", "TF-IDF", "Cosine Similarity", "REST API"],
+      github: "https://github.com/m1chele11/movie-recommendation-engine",
+    },
+    {
       name: "Tree Traversal Algorithm",
       description: "Data structures project exploring tree algorithms like BFS, DFS, heaps, and binary search trees.",
       tech: ["Python", "DSA", "Algorithms"],
